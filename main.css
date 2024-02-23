@@ -1,0 +1,120 @@
+*{
+ box-sizing: border;
+ margin: 0px;
+ padding: 0px;   
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+ }
+
+section{
+    max-width: 1120px;
+ }
+
+/*header*/
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 50px ;
+    align-items: center;
+}
+@media screen and (width < 768px ){
+}
+
+@media screen and (width < 425px ){
+    header{ 
+        padding: 15px 10px;
+    }
+    
+}
+
+section{
+    max-width: 1000px;
+}
+
+/*foodlist*/
+#foodlistsection{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0px 40px;
+}
+#foolistsection #foodlist{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+}
+#foodlist{
+    display: flex;
+}
+
+#foodlist div{
+    width: 20%;
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+#foodlist div h3{
+    margin: 10px 0px;
+    line-height:30px ;
+}
+#foodlist div p{
+line-height: 25px;
+
+}
+
+#foodlist  div img{
+    width: 100%;
+}
+#pagination{
+    margin-top: 20px;
+ }
+#paginationcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+ }
+#paginationcontainer  button{
+    padding: 12px 15px;
+    border: 0px;
+    background-color: white;
+ }
+
+#paginationconatiner #defaultbutton{
+    background-color: black;
+    color: white;
+ }
+#paginationcontainer button:hover{
+    background-color: black;
+    color: white;
+ }
+ 
+ @media screen and (width < 1120px) {
+    #food_list_section {
+     padding: 0px 20px;
+    } 
+ }
+ 
+ @media screen and (width < 600px) {
+     #food_list div {
+         width: 100%;
+     }
+ }
+ /*about*/
+h4{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
